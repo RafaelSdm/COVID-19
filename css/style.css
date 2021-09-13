@@ -209,6 +209,48 @@ header.sticky{
 
 
 
+.symptoms{
+    background: url(../images/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+
+.symptoms .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.symptoms .column .main-image img{
+    width: 43vh;
+}
+
+.symptoms .column .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.symptoms.column .box-container .box{
+    margin: 1rem;
+    text-align: center;
+}
+
+
+
+.symptoms .column .box-container .box h3{
+    font-size: 2rem;
+    color:  var(--blue);
+}
+
 
 
 
@@ -275,6 +317,10 @@ body{
     .fa-times{
         transform: rotate(180deg);
     }
+
+    .symptoms .column .main-image img{
+        display: none;
+    }
 }
 
 @media (max-width:768px){
@@ -304,5 +350,9 @@ body{
 
     .home .content h3{
         font-size: 2.5rem;
+    }
+
+    .symptoms .column .box-container .box img{
+        width: 14rem;
     }
 }
