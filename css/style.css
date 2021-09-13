@@ -29,6 +29,12 @@ html{
    overflow-x: hidden; 
 }
 
+section{
+    min-height: 100vh;
+    padding: 1rem 9%;
+    padding-top: 8rem ;
+}
+
 header{
     width: 100%;
     display: flex;
@@ -87,8 +93,46 @@ header .navbar a:hover{
 
 
 
+.home{
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color: var(--dark-blue);
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: var(--blue);
+    font-weight: normal;
+}
 
 
+
+.home .content .btn{
+    display: inline-block;
+    padding: .7rem 3rem;
+    color: white;
+    background: var(--blue);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+
+.home .content .btn:hover{
+    background-color: var(--dark-blue);
+}
 
 
 
@@ -171,5 +215,35 @@ body{
 
     .fa-times{
         transform: rotate(180deg);
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+
+    }
+
+    .home .content h3{
+        font-size: 3.5rem;
+    }
+}
+
+
+@media (max-width:450px){
+    
+
+    .home .content h1{
+        font-size: 3.5rem;
+
+    }
+
+    .home .content h3{
+        font-size: 2.5rem;
     }
 }
